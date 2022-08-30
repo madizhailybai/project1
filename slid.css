@@ -1,0 +1,120 @@
+.middle{
+    width: 1100px;
+    height: 400px;
+    border: 5px solid black;
+    margin-top: 30px;
+    margin-left: 110px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.navigation{
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    display: flex;
+}  
+ 
+.bar{
+    height: 8px;
+    width: 30px;
+    background-color: black;
+    margin: 6px;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.bar:hover{opacity: 0.8;
+}
+
+.slides{display: flex;
+    width: 400%;
+    height: 100%;
+    }
+    .slide{width: 25%;}
+    
+    .slide img{width: 100%;
+    height: 100%;}
+    
+    input[name='r']{
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    #r1:checked ~ .s1{
+        margin-left: 0;
+    }
+    
+    
+    
+    
+    #r2:checked ~ .s1{
+        margin-left: -25%;
+    }
+    
+    
+    #r3:checked ~ .s1{
+        margin-left: -50%;
+    }
+    
+    
+    #r4:checked ~ .s1{
+        margin-left: -75%;
+    }
+
+    .foot{
+        margin-top: 10px;
+        background-color: black;
+        width: 100%;
+        height: 500px;
+        padding-left: 400px;
+        padding-top: 600px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 30px;
+        color: white;
+         
+        }
+
+
+        @media all and (max-width:550px){
+            .middle{
+                width:440px ;
+                height:400px ;
+                margin-left: 10px;
+            }
+        }
+
+
+        @media all and (max-width:550px){
+            .foot{
+                padding-left: 0;
+            }
+        }
+
+
+        .opisanie{
+            position: absolute;
+            top: 1000px;
+            font-size: 25px;
+            color: white;
+        }
+
+        .rec{
+            float: right;
+            width: 400px;
+            height: 400px;
+            shape-outside: polygon(44% 49%, 100% 0, 100% 100%, 8% 100%); 
+            clip-path: polygon(44% 49%, 100% 0, 100% 100%, 8% 100%);
+            background-color: aquamarine;
+
+        }
+
+        .rec2{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background-color: aquamarine;
+            shape-outside: polygon(0 1%, 56% 73%, 72% 100%, 0 100%); 
+            clip-path: polygon(0 1%, 56% 73%, 72% 100%, 0 100%);
+        }
+    
